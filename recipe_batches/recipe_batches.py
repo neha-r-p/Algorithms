@@ -3,7 +3,13 @@
 import math
 
 def recipe_batches(recipe, ingredients):
+  print(recipe.items())
   pass 
+  #if the recipe has ingredients that are unavailable, return 0
+
+  #return maximum number of whole batches
+
+recipe_batches({ 'milk': 100, 'flour': 4, 'sugar': 10, 'butter': 5 }, { 'milk': 1288, 'flour': 9, 'sugar': 95 })
 
 
 if __name__ == '__main__':
