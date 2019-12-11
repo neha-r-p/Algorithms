@@ -3,13 +3,19 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  print(recipe.items())
-  pass 
+    print(recipe.items())
+    batches = 0
   #if the recipe has ingredients that are unavailable, return 0
+    if len(recipe.items()) > len(ingredients.items()):
+        return batches
+  #if recipe requires more than ingredients has, return 0
+
+  #check each value of recipe to ingredient and divide floor. Number of whole batches is smallest number?
 
   #return maximum number of whole batches
+    return batches
 
-recipe_batches({ 'milk': 100, 'flour': 4, 'sugar': 10, 'butter': 5 }, { 'milk': 1288, 'flour': 9, 'sugar': 95 })
+print(recipe_batches({ 'milk': 100, 'flour': 4, 'sugar': 10, 'butter': 5 }, { 'milk': 1288, 'flour': 9, 'sugar': 95 }))
 
 
 if __name__ == '__main__':
