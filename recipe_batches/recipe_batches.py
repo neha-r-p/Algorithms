@@ -17,10 +17,10 @@ def recipe_batches(recipe, ingredients):
                 if k1 == k2:
                     if v2 > v1 and batches == None:
                         batches = v2//v1
-                    elif v2>v1 and v2//v1 < batches:
+                    elif v2//v1 < batches:
                         batches = v2//v1
-                    elif v2<v1: #if recipe requires more than ingredients has, return 0
-                        batches = 0
+                    # elif v2<v1: #if recipe requires more than ingredients has, return 0
+                    #     batches = 0
     #return maximum number of whole batches
     return batches
     
